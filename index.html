@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment Analyzer Demo</title>
+  <!-- Linking to your styling.css file -->
+  <link rel="stylesheet" href="styling.css"> <!-- General Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for Icons -->
+</head>
+<body>
+  <div class="container">
+    <h1>AI-Powered Social Media Comment Analyzer</h1>
+    <p class="subtitle">Type or paste your comment in <strong>Tamil, English, or Thanglish</strong> to analyze sentiment, toxicity, sarcasm, and topic.</p>
+    
+    <!-- Input Box -->
+    <textarea id="commentInput" placeholder="Type or paste your comment here..."></textarea>
+    <button onclick="analyzeComment()">Analyze</button>
+    
+    <!-- Results Section -->
+    <div class="results">
+      <div class="result-card" id="sentimentCard">
+        <i class="fas fa-smile"></i>
+        <span class="label">Sentiment:</span>
+        <span id="sentiment" class="value">-</span>
+      </div>
+      <div class="result-card" id="toxicityCard">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span class="label">Toxicity:</span>
+        <span id="toxicity" class="value">-</span>
+      </div>
+      <div class="result-card" id="sarcasmCard">
+        <i class="fas fa-theater-masks"></i>
+        <span class="label">Sarcasm:</span>
+        <span id="sarcasm" class="value">-</span>
+      </div>
+      <div class="result-card" id="topicCard">
+        <i class="fas fa-tags"></i>
+        <span class="label">Topic:</span>
+        <span id="topic" class="value">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linking to your interactivity.js file -->
+  <script src="interactivity.js"></script> <!-- Your JS Logic -->
+</body>
+</html>
